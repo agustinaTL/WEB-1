@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!--link css-->
+    <link rel="stylesheet" href="../CSS/style.css">
+
+    <!--link js-->
+    <link rel="stylesheet" href="../JS/main.js">
+    
+    <!--link boostrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    
+    <!--link fuentes de letra-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <title>INCIO</title>
+</head>
+<body>
+    <div class="contenedor">
+      <div class="header">
+        <nav class="navbar">
+            <div class="container-fluid">
+              <a href="../index.html"><img src="../IMG/logo.png" alt="" width="120" height="120"></a>
+            
+            <div class="dropdown">
+              <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                Menú
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                <li><a class="dropdown-item" href="productos.html">Productos</a></li>
+                <li><a class="dropdown-item" href="buscarAgregar.html">Buscar y agregar productos</a></li>
+                <li><a class="dropdown-item" href="formulario.html">Iniciar sesión o registrate</a></li>
+              </ul>
+            </div>
+            
+            <div class="carrito"><a href="../HTML/carrito.html"> <img src="../IMG/carrito-de-compras.png" alt="" width="30" height="30"></a></div>
+        </nav>
+      </div>  
+      <div class="datos">
+      <form id="form-carrito">
+        <label for="producto">Elija su producto</label>
+        <select name="producto" id="select-cervezas">
+        </select>
+        <button id="btn-agregar" >Agregar</button>
+        <button id="btn-agregar3" type="button">Agregar +3</button>
+      </form>
+      <div class="boton">
+        <button class="agregar" id="btn-eliminar">Eliminar producto</button>
+        <button class="agregar" id="btn-vaciar">Vaciar tabla</button>
+      </div>
+      <p>TOTAL $<span id="total">0</span></p>
+      <table id="arregloCarrito">
+          <thead>
+              <tr>
+                  <td>PRODUCTO</td>
+                  <td>CANTIDAD</td>
+                  <td>PRECIO/u</td>
+              </tr>
+          </thead>
+          <tbody id="tabla-carrito" class="carrito">
+
+          </tbody>
+          <!-- <tr>
+            <ul id="lista-carrito" class="carrito">
+
+
+          </tr> -->
+      </table>
+      
+    </div>
+        <footer>
+          <div class="container">
+            <div class="row">
+              <div class="col">
+                <h2 class="ft-title">Redes Sociales</h2>
+              <ul>
+                <li><a href="https://es-la.facebook.com/"><link rel="stylesheet" href="#"><img src="../IMG/facebook.png" alt="" width="20" height="20">Beer House</a></li>
+                <li><a href="https://www.instagram.com/"><link rel="stylesheet" href="#"><img src="../IMG/instagram.png" alt="" width="20" height="20">Beer House</a></li>
+                <li><a href="https://web.whatsapp.com/"><link rel="stylesheet" href="#"><img src="../IMG/whatsapp.png" alt="" width="20" height="20"> WhatsApp</a></li>
+      
+              </ul>
+              </div>
+              <div class="col order-5">
+                <h2 class="ft-title">Contacto</h2>
+              <ul>
+                <li><a href="https://www.google.com.ar/maps/place/Tandil,+Provincia+de+Buenos+Aires/@-37.3194474,-59.1839019,13z/data=!3m1!4b1!4m6!3m5!1s0x95911f9b2733946f:0xceef2c76899c202d!8m2!3d-37.3287999!4d-59.1367167!16zL20vMDNwdnpu"><link rel="stylesheet" href=""><img src="../IMG/map.png" alt="" width="20" height="20">Tandil</a></li>
+                <li><img src="../IMG/mobile-app.png" alt="" width="20" height="20"> (249)154207098</li>
+                <li><a href="https://mail.google.com/mail"><link rel="icon" href=""><img src="../IMG/gmail.png" alt="" width="20" height="20">beerhouse@gmail.com</a></li>
+              </ul>
+            </div>
+              </div>
+            </div>
+          </div>
+        </footer>
+    </div>
+    <!--link js boostrap-->
+    <script src="../JS/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
